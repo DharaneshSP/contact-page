@@ -35,6 +35,7 @@ const Page = () => {
     }
 
     if((ValidEmail && ValidName && ValidNumber)){
+      console.log("called");
       handlesubmission(name,email,number,message)
       .then(()=>{
         toast.success("Data Stored");
