@@ -10,7 +10,7 @@ interface prop{
     onChange:ChangeEventHandler<HTMLInputElement>
 }
 
-const input = ({id,name,type,placeholder,value,onChange}:prop) => {
+const Input = ({id,name,type,placeholder,value,onChange}:prop) => {
   return (
     <div>
     <div className="mt-0">
@@ -29,4 +29,4 @@ const input = ({id,name,type,placeholder,value,onChange}:prop) => {
   )
 }
 
-export default input
+export default Input

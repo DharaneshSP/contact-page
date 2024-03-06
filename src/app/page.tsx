@@ -1,11 +1,11 @@
 "use client"
 
 import React, {useState} from 'react'
-import Input from '@/component/input';
+import Input from '@/component/Input'
 import toast from 'react-hot-toast';
 import { handlesubmission } from '@/libs/actions';
 
-const page = () => {
+const Page = () => {
 
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
@@ -43,7 +43,6 @@ const page = () => {
         setName("");
         setNumber("");
       })
-      
     }
     
   };
@@ -121,4 +120,4 @@ const page = () => {
 }
 
 
-export default page
+export default Page
