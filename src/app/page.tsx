@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useState} from 'react'
-import Input from '@/component/Input'
+import Input from '@/component/input'
 import toast from 'react-hot-toast';
 import { handlesubmission } from '@/libs/actions';
 
