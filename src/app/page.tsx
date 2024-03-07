@@ -55,9 +55,9 @@ const Page = () => {
   return (
     <>
 
-      <div className="fixed left-2 right-2 top-0  flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
+      <div className="fixed left-2 right-2 top-0 font-mono flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h2 className=" rounded border-solid border-2 border-black bg-black  mt-1 mb-3 text-center text-2xl font-bold leading-9 tracking-tight text-[#E384FF]">
+            <h2 className="  rounded border-solid border-2 border-black bg-black  mt-1 mb-3 text-center text-2xl font-bold leading-9 tracking-tight text-[#E384FF]">
               CONTACT FORM
             </h2>
           </div>  
