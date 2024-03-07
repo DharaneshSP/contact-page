@@ -5,7 +5,7 @@ import { SHEETDB_ENDPOINT } from "./constants"
 export const handlesubmission = async(name:string,email:string,number:string,message:string)=>{
     
    try{ 
-    console.log("called ",SHEETDB_ENDPOINT);
+    
     const response = await fetch(SHEETDB_ENDPOINT, {
        
       method: 'POST',
