@@ -44,6 +44,9 @@ const Page = () => {
         setName("");
         setNumber("");
       })
+      .catch((err)=>{
+        toast.error("Submission Failed");
+      })
     }
     
   };

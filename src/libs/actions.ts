@@ -4,8 +4,9 @@ import { SHEETDB_ENDPOINT } from "./constants"
 
 export const handlesubmission = async(name:string,email:string,number:string,message:string)=>{
     
+   try{ 
     console.log("called ",SHEETDB_ENDPOINT);
-    fetch(SHEETDB_ENDPOINT, {
+    const response = await fetch(SHEETDB_ENDPOINT, {
        
       method: 'POST',
       headers: {
@@ -23,9 +24,21 @@ export const handlesubmission = async(name:string,email:string,number:string,mes
           ]
       })
     
-  })
-    .then((response) => response.json())
-    .then((data) => {
-          console.log(data);
-     })
+  });
+
+  if(!response.ok){
+    throw new Error("Failed to Store");
+  }
+
+  const data = await response.json();
+        console.log(data);
+        return data;
+
+}
+catch (error) {
+    console.error('Submission failed:', error);
+    throw error;
+}
+
+    
 }
