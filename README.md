@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!--<h3 align="left" >
+  INTERNSHIP ASSIGNMENT
+</h3>
+-->
 
-## Getting Started
+### Internship Assignment
 
-First, run the development server:
+ A simple contact form page project to collect the user's contact information and to store in google spreadsheet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="left">
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+#### Local Setup and Run Instructions
 
-To learn more about Next.js, take a look at the following resources:
+- Clone Repository
+  ```bash
+    git clone https://github.com/DharaneshSP/contact-page.git
+  
+- Navigate to Project
+  ```bash
+    cd contact-page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Google Sheet Integration
+  
+  - Create a Google Spreadsheet, open it, click "Share" in the upper right corner, change `restricted` to `Anyone with the link` under general access, change `viewer` to `editor` under role conversion, and then copy your sheet's link.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - Login to `sheetdb.io` with your google account and use the option `Create the free API` and paste your sheet's link and then copy the `endpoint url` (This is your sheet's sheetdb url).
 
-## Deploy on Vercel
+  - Create .env file on the project in your local machine and as in the .env.example file , create variable `SHEETDB_URL` and map with your previously copied sheetdb endpoint.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  
+- Install Dependencies
+  ```bash
+    npm i
+  ```
+  (or)
+  
+  ```bash
+    yarn
+  
+- Run Application
+  ```bash
+    npm run dev
+  ```
+  (or)
+  
+  ```bash
+    yarn dev
+  ```
+  
+-  Open http://localhost:3000 at your Web Browser
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+  
+
